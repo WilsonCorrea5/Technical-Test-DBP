@@ -48,30 +48,4 @@ newman run Swagger\ Petstore.postman_collection.json -r htmlextra
 ```sh
 # To generate HTML report on a specific route run:
 newman run Swagger\ Petstore.postman_collection.json -r htmlextra --reporter-htmlextra-export [specific route]
-```sh
-# To Verify purchase a product run:
-npx playwright test -g '@purchaseProduct'
-```
-
-```sh
-# To verify categories run:
-npx playwright test -g '@verifyCategories'
-```
-
-```sh
-# To verify Products run:
-npx playwright test -g '@verifyProducts'
-```
-
-
-```sh
-# To verify log in with wrong credentials run:
-npx playwright test -g '@verifyLoginWrong'
-```
-
-#### Generate a HTML reports.
-
-```sh
-# To open HTML report run:
-npx playwright show-report
 ```
